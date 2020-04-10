@@ -5,10 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My JS Page</title>
+  <script>
+    function ShowDate() {
+      document.getElementById('demo').innerHTML = Date()
+    }
+  </script>
 </head>
 
 <body>
-  <button type="button" onclick="document.getElementById('demo').innerHTML = date()">SEE the date
+  <button type="button" 
+    onclick="ShowDate();">
+    SEE the date
   </button>
   <p id='demo'></p>
 </body>
